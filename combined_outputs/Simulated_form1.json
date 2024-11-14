@@ -1,0 +1,131 @@
+{
+    "Patient_Data": {
+      "Filename": "Simulated Triage Form #1.docx",
+      "Age": 4,
+      "Ethnicity": 1,
+      "Gender": 1,
+      "Occupation": "Accountant at PWC",
+      "Past_Psychiatric_History": 0,
+      "Past_Admissions_to_IMH": 0,
+      "Past_Medical_History": 1,
+      "Family_Medical_History": 1,
+      "Diagnosis": "Depression",
+      "Presenting_Concerns": "Unable to focus at work, missing many days, doesn’t feel like getting up from bed, not enjoying hobbies like fishing or reading",
+      "Symptoms": 1,
+      "Living_Arrangement": 0,
+      "Pack_Years": 3,
+      "Alcohol_Consumption": 3,
+      "Functional_Impairment": 0,
+      "Coping_Mechanisms": 2,
+      "Formulation": "Long history of low self-esteem issues and is constantly bothered by his lack of meaning and contribution to the world around him. This lack of control over his situation in early childhood has continued throughout adulthood. Possible auditory hallucinations to explore further.",
+      "Social_History": 1,
+      "Substance_Use": {
+        "Smoking": 3,
+        "Alcohol": 3
+      },
+      "Suicidal_Ideation": 1,
+      "Aggression": 3
+    },
+    "Biological": {
+      "Predisposing": {
+        "Presence": {
+          "What was their temperament at birth?": "0",
+          "What do we know about their consistent personality characteristics?": "0",
+          "Is there a family psychiatric history?": "1",
+          "Are there toxic exposures in utero, birth complications, or developmental disorders?": "0",
+          "Is there a history of concussions or traumatic brain injuries?": "0",
+          "Neurodevelopmental history": "0"
+        }
+      },
+      "Precipitating": {
+        "Presence": {
+          "Serious medical illness or injury?": "0",
+          "Increasing use of alcohol or drugs?": "1",
+          "Medication non-adherence?": "0",
+          "Pregnancy or hormonal changes?": "0",
+          "Sleep deprivation?": "1"
+        }
+      },
+      "Perpetuating": {
+        "Presence": {
+          "Do they have a chronic illness, functional impairment caused by cognitive deficits, or a learning disorder?": "0",
+          "Lack of medication optimization (suboptimal doses)": "0",
+          "Lack of treatment or follow up for mental illness": "1",
+          "Current substance use?": "1",
+          "Chronic medical problems, chronic pain, or disability?": "0",
+          "How is patient responding to hospitalization?": "0",
+          "What are the degree of the symptoms right now?": "1"
+        }
+      },
+      "Protective": {
+        "Presence": {
+          "Good overall health": "0",
+          "Absence of family psychiatric history": "0",
+          "What is their response to medications?": "1",
+          "Do they have above-average intelligence, easy temperament, resiliency, specific talents or abilities?": "1",
+          "No substance use is a protective factor": "0"
+        }
+      }
+    },
+    "Psychological": {
+      "Predisposing": {
+        "Presence": {
+          "What is their attachment style?": "0",
+          "How did their family act and what is the family structure?": "1",
+          "Do they have problems with affect modulation?": "1",
+          "Do they have a rigid or negative cognitive style?": "1",
+          "Low self-image/self-esteem?": "1"
+        }
+      },
+      "Precipitating": {
+        "Presence": {
+          "Cognitive: core beliefs and cognitive distortions": "1",
+          "Dialectical: emotional dysregulation and dysfunction": "1",
+          "Interpersonal: grief, loss, disagreement, change/transitions": "1",
+          "Psychodynamic: unconscious conflicts/defenses": "1"
+        }
+      },
+      "Perpetuating": {
+        "Presence": {
+          "One or more perpetuating psychological processes: chronic negative thoughts and reinforcing environment": "1",
+          "Help-seeking and help-rejecting, chronic emotional dysregulation and poor distress tolerance": "1",
+          "Chronic/unresolved dysfunctional relationships, interpersonal conflicts, or role transitions": "1",
+          "Recurring themes throughout one’s life, chronic primitive defenses": "1",
+          "What are their beliefs about self/others/world?": "1",
+          "Are there self-destructive coping mechanisms, or traumatic re-enactments?": "1",
+          "Ongoing poor coping skills, limited or lack of insight?": "1",
+          "Personality traits that affect relationships": "0",
+          "How is their attachment style playing out in this particular situation?": "0"
+        }
+      }
+    },
+    "Social": {
+      "Predisposing": {
+        "Presence": {
+          "Poverty, low socioeconomic status, teenage parenthood, or poor access to health care?": "0",
+          "Childhood exposure to maternal depression, domestic violence, late adoption, temperament mismatch, or marital conflicts?": "1",
+          "Immigration history, marginalization, discrimination, or racism?": "0",
+          "Exposure to antisocial personality/traits": "0"
+        }
+      },
+      "Precipitating": {
+        "Presence": {
+          "Loss of or separation from close family, partner, or friends": "1",
+          "Interpersonal trauma": "0",
+          "Work/academic/financial stressors": "1",
+          "Recent immigration, loss of home, loss of a supportive service": "0",
+          "Is the individual's current experience/symptoms similar to a past situation?": "1"
+        }
+      },
+      "Perpetuating": {
+        "Presence": {
+          "Chronic marital/relationship discord, lack of empathy from family/friends": "0",
+          "Chronically dangerous or hostile neighborhood, trans-generational problems of immigration": "0",
+          "Ongoing transitions and stressors": "1",
+          "Poor finances or working long hours": "1",
+          "Isolation, unsafe environment": "0"
+        }
+      }
+    }
+  }
+  
