@@ -4,6 +4,8 @@
 - **Process**: Iterate through each `.docx` file, extracting the relevant sections of text between specified markers (e.g., ‘Additional information’ to ‘Follow-Up Plan’).
 - **Output**: Save the extracted text as individual `.txt` files or in-memory data structures.
 
+run ```python text_extraction.py```, with the correct inout folders
+
 ### 2. **Format Text with Appropriate Columns**
 
 - **Input**: Extracted text from triage forms + raw docx (attached into chatgpt as docx file)
