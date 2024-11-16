@@ -1,17 +1,17 @@
-### 1. **Extract Text from Triage Forms**
+### Step 1: **Extract Text from Triage Forms**
 
 - **Input**: Folder containing `.docx` triage forms.
 - **Process**: Iterate through each `.docx` file, extracting the relevant sections of text between specified markers (e.g., ‘Additional information’ to ‘Follow-Up Plan’).
 - **Output**: Save the extracted text as individual `.txt` files or in-memory data structures.
 
-run ```python text_extraction.py```, with the correct inout folders
+run ```python text_extraction.py```, with the correct input folders
 
-### 2. **Format Text with Appropriate Columns**
+### Step 2: **Format Text with Appropriate Columns**
 
 - **Input**: Extracted text from triage forms + raw docx (attached into chatgpt as docx file)
 - **Process**: Create a json structure with predefined columns such as "Age", "Ethnicity", "Diagnosis", etc. Each triage form fills the relevant fields in the CSV format. Handle potential variations in the structure of the triage forms (e.g., missing fields)
 - **Tools**: Chatgpt
-- **Output**: A structured CSV file containing formatted data from multiple triage forms, and possibly a csv if required (state: ‘Please save this json output as a csv as well’ )
+- **Output**: A structured CSV file containing formatted data from multiple triage forms, and possibly a csv if required.
 
 ```jsx
 Prompt:
@@ -81,9 +81,16 @@ If there are no suitable content to fill the header, you may leave it blank
     "Aggression": "Aggressive towards family, threatened wife, shouted vulgarities"
 }
 
+Please save this json output as a csv as well.
+
 ```
 
-### Step 3: 4 P's
+### Step 3: Crafting a formulation (4 P's)
+
+- **Input**: Output from Step 2 + below prompt 
+- **Process**: Categorise the information from the triage forms to craft a formulation based on the table below. Handle potential variations in the structure of the triage forms (e.g., missing fields)
+- **Tools**: TANDEM
+- **Output**: A json output containing answers to the questions in the formulation table.
 
 |  | **Biological** | **Psychological** | **Social** |
 | --- | --- | --- | --- |
@@ -417,14 +424,14 @@ Sample output:
 }
 ```
 
-Step 2: 
+Step 3.2: 
 **input :** database of answers (categorised by the headings in the table, ie should have 12 databases of answers), all triage forms
 **output :** triage forms with coded categories
 
 Prompt
 
 ```
-Prompt for Step 2: Categorizing the Data
+Prompt for Step 3.2: Categorizing the Data
 I have patient data categorized into biological, psychological, and social factors from a triage form. I need to code the qualitative information into quantitative values for data analysis. Use the coding scheme provided below to translate the data. If the field does not apply, omit it. Return a JSON output with numeric codes for the specified categories, and retain other values as provided.
 
 For multi-coded fields, return them as a comma-separated list. No explanation is needed, just return the coded results.
@@ -737,6 +744,11 @@ Integration into Your Pipeline:
 1. Use ChatGPT to analyze and score the responses.
 2. Integrate these scores back into your patient records and treatment plans.
 3. Use the insights from the scores to guide therapeutic interventions and monitor progress over time.
+
+- **Input**: Output from Step 1 and step 3.2 (for each individual triage form) + below prompt 
+- **Process**: Score the responses in triage form according to the scales provided. Handle potential variations in the structure of the triage forms (e.g., missing fields)
+- **Tools**: TANDEM
+- **Output**: A json output containing answers and scores for the scales.
 
 Prompt:
 ```
